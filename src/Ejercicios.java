@@ -22,5 +22,16 @@ public class Ejercicios {
         }
         return mcd;
     }
+    /*suma elementos*/
+    public static int sumaVector(int[] vector, int indice){
+        int suma;
 
+        if (indice == vector.length - 1){
+            suma = vector[indice];
+        }else{
+            suma = vector[indice] + sumaVector(vector,indice + 1);
+        }
+        return suma;
+    }
 }
+
